@@ -18,6 +18,8 @@
 		1EA251AF2783B712009DF7B0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1EA251AE2783B712009DF7B0 /* SnapKit */; };
 		1EA251B12783B799009DF7B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251B02783B799009DF7B0 /* MainViewController.swift */; };
 		1EA251B32783B94C009DF7B0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251B22783B94C009DF7B0 /* SearchBar.swift */; };
+		1EA251B52783BC37009DF7B0 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251B42783BC37009DF7B0 /* FilterView.swift */; };
+		1EA251B72783BD44009DF7B0 /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251B62783BD44009DF7B0 /* BlogList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		1EA2519D2783B3A7009DF7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EA251B02783B799009DF7B0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1EA251B22783B94C009DF7B0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		1EA251B42783BC37009DF7B0 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		1EA251B62783BD44009DF7B0 /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				1EA2519A2783B3A7009DF7B0 /* LaunchScreen.storyboard */,
 				1EA2519D2783B3A7009DF7B0 /* Info.plist */,
 				1EA251B22783B94C009DF7B0 /* SearchBar.swift */,
+				1EA251B42783BC37009DF7B0 /* FilterView.swift */,
+				1EA251B62783BD44009DF7B0 /* BlogList.swift */,
 			);
 			path = DaumBlogApp;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EA251B12783B799009DF7B0 /* MainViewController.swift in Sources */,
+				1EA251B72783BD44009DF7B0 /* BlogList.swift in Sources */,
 				1EA251B32783B94C009DF7B0 /* SearchBar.swift in Sources */,
 				1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */,
+				1EA251B52783BC37009DF7B0 /* FilterView.swift in Sources */,
 				1EA251922783B3A5009DF7B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
