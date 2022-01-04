@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8569B7278504240034EC97 /* DaumKakaoBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */; };
 		1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */; };
 		1EA251922783B3A5009DF7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */; };
 		1EA251992783B3A7009DF7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA251982783B3A7009DF7B0 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumKakaoBlog.swift; sourceTree = "<group>"; };
 		1EA2518C2783B3A5009DF7B0 /* DaumBlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumBlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				1EA251BA2783BD76009DF7B0 /* BlogListCellData.swift */,
 				1EA251C32783C29B009DF7B0 /* AlertActionConvertible.swift */,
+				1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8569B7278504240034EC97 /* DaumKakaoBlog.swift in Sources */,
 				1EA251B12783B799009DF7B0 /* MainViewController.swift in Sources */,
 				1EA251B92783BD6C009DF7B0 /* BlogListCell.swift in Sources */,
 				1EA251B72783BD44009DF7B0 /* BlogList.swift in Sources */,
