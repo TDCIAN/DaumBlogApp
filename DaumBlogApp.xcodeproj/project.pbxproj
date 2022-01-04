@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E8569B7278504240034EC97 /* DaumKakaoBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */; };
+		1E8569BA27850B350034EC97 /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8569B927850B350034EC97 /* SearchBlogAPI.swift */; };
 		1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */; };
 		1EA251922783B3A5009DF7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */; };
 		1EA251992783B3A7009DF7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA251982783B3A7009DF7B0 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumKakaoBlog.swift; sourceTree = "<group>"; };
+		1E8569B927850B350034EC97 /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
 		1EA2518C2783B3A5009DF7B0 /* DaumBlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumBlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E8569B827850B280034EC97 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1E8569B927850B350034EC97 /* SearchBlogAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		1EA251832783B3A5009DF7B0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */,
 				1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */,
 				1EA251BD2783BDAC009DF7B0 /* Entities */,
+				1E8569B827850B280034EC97 /* Network */,
 				1EA251BC2783BD87009DF7B0 /* Presentation */,
 				1EA251982783B3A7009DF7B0 /* Assets.xcassets */,
 				1EA2519A2783B3A7009DF7B0 /* LaunchScreen.storyboard */,
@@ -237,6 +248,7 @@
 				1EA251B12783B799009DF7B0 /* MainViewController.swift in Sources */,
 				1EA251B92783BD6C009DF7B0 /* BlogListCell.swift in Sources */,
 				1EA251B72783BD44009DF7B0 /* BlogList.swift in Sources */,
+				1E8569BA27850B350034EC97 /* SearchBlogAPI.swift in Sources */,
 				1EA251BB2783BD76009DF7B0 /* BlogListCellData.swift in Sources */,
 				1EA251B32783B94C009DF7B0 /* SearchBar.swift in Sources */,
 				1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */,
