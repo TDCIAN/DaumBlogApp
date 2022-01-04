@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E8569B7278504240034EC97 /* DaumKakaoBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */; };
 		1E8569BA27850B350034EC97 /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8569B927850B350034EC97 /* SearchBlogAPI.swift */; };
+		1E8569BC27850C220034EC97 /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8569BB27850C220034EC97 /* SearchBlogNetwork.swift */; };
 		1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */; };
 		1EA251922783B3A5009DF7B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */; };
 		1EA251992783B3A7009DF7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA251982783B3A7009DF7B0 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		1E8569B6278504240034EC97 /* DaumKakaoBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumKakaoBlog.swift; sourceTree = "<group>"; };
 		1E8569B927850B350034EC97 /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		1E8569BB27850C220034EC97 /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
 		1EA2518C2783B3A5009DF7B0 /* DaumBlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumBlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA2518F2783B3A5009DF7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EA251912783B3A5009DF7B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1E8569B927850B350034EC97 /* SearchBlogAPI.swift */,
+				1E8569BB27850C220034EC97 /* SearchBlogNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */,
 				1EA251B52783BC37009DF7B0 /* FilterView.swift in Sources */,
 				1EA251922783B3A5009DF7B0 /* SceneDelegate.swift in Sources */,
+				1E8569BC27850C220034EC97 /* SearchBlogNetwork.swift in Sources */,
 				1EA251C42783C29B009DF7B0 /* AlertActionConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
