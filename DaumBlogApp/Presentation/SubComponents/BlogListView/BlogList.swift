@@ -35,6 +35,8 @@ class BlogListView: UITableView {
     
 //    private func bind() {
     func bind(_ viewModel: BlogListViewModel) {
+        headerView.bind(viewModel.filterViewModel)
+        
         viewModel.cellData
 //            .asDriver(onErrorJustReturn: []) -> BlogListViewModel에서 한다
             .drive(self.rx.items) { tableView, row, data in
