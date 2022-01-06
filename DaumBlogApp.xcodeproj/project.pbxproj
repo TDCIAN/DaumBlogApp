@@ -30,6 +30,7 @@
 		1EBA6F242786909000F952AE /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA6F232786909000F952AE /* FilterViewModel.swift */; };
 		1EBA6F272786916700F952AE /* BlogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA6F262786916700F952AE /* BlogListViewModel.swift */; };
 		1EBA6F292786925E00F952AE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA6F282786925E00F952AE /* MainViewModel.swift */; };
+		1EBA6F2B2786993500F952AE /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA6F2A2786993500F952AE /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		1EBA6F232786909000F952AE /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		1EBA6F262786916700F952AE /* BlogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListViewModel.swift; sourceTree = "<group>"; };
 		1EBA6F282786925E00F952AE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1EBA6F2A2786993500F952AE /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				1EA251B02783B799009DF7B0 /* MainViewController.swift */,
 				1EBA6F282786925E00F952AE /* MainViewModel.swift */,
+				1EBA6F2A2786993500F952AE /* MainModel.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				1EA251B32783B94C009DF7B0 /* SearchBar.swift in Sources */,
 				1EA251902783B3A5009DF7B0 /* AppDelegate.swift in Sources */,
 				1EA251B52783BC37009DF7B0 /* FilterView.swift in Sources */,
+				1EBA6F2B2786993500F952AE /* MainModel.swift in Sources */,
 				1EA251922783B3A5009DF7B0 /* SceneDelegate.swift in Sources */,
 				1EBA6F2227868ED000F952AE /* SearchBarViewModel.swift in Sources */,
 				1E8569BC27850C220034EC97 /* SearchBlogNetwork.swift in Sources */,

@@ -20,43 +20,49 @@ struct MainViewModel {
     
     let shouldPresentAlert: Signal<MainViewController.Alert>
     
-    init() {
+//    init() {
+    init(model: MainModel = MainModel()) {
 //        let blogResult = searchBar.shouldLoadResult
         let blogResult = searchBarViewModel.shouldLoadResult
-            .flatMapLatest { query in
-                SearchBlogNetwork().searchBlog(query: query)
-            }
+            .flatMapLatest(model.searchBlog)
             .share()
+//            .flatMapLatest { query in
+//                SearchBlogNetwork().searchBlog(query: query)
+//            }
+//            .share()
         
         let blogValue = blogResult
-            .map { data -> DaumKakaoBlog? in
-                guard case .success(let value) = data else { return nil }
-                return value
-            }
-            .filter { $0 != nil }
+            .compactMap(model.getBlogValue)
+//            .map { data -> DaumKakaoBlog? in
+//                guard case .success(let value) = data else { return nil }
+//                return value
+//            }
+//            .filter { $0 != nil }
         
         let blogError = blogResult
-            .compactMap { data -> String? in
-                guard case .failure(let error) = data else { return nil }
-                return error.localizedDescription
-            }
+            .compactMap(model.getBlogError)
+//            .compactMap { data -> String? in
+//                guard case .failure(let error) = data else { return nil }
+//                return error.localizedDescription
+//            }
         
         // 네트워크를 통해 가져온 값을 cellData로 변환
         let cellData = blogValue
-            .map { blog -> [BlogListCellData] in
-                guard let blog = blog else { return [] }
-                
-                return blog.documents
-                    .map {
-                        let thumbnailURL = URL(string: $0.thumbnail ?? "")
-                        return BlogListCellData(
-                            thumbnailURL: thumbnailURL,
-                            name: $0.name,
-                            title: $0.title,
-                            datetime: $0.datetime
-                        )
-                    }
-            }
+            .map(model.getBlogListCellData)
+//            .map { blog -> [BlogListCellData] in
+//                guard let blog = blog else { return [] }
+//
+//                return blog.documents
+//                    .map {
+//                        let thumbnailURL = URL(string: $0.thumbnail ?? "")
+//                        return BlogListCellData(
+//                            thumbnailURL: thumbnailURL,
+//                            name: $0.name,
+//                            title: $0.title,
+//                            datetime: $0.datetime
+//                        )
+//                    }
+//            }
         
         // FilterView를 선택했을 때 나오는 alertSheet를 선택했을 때 type
         let sortedType = alertActionTapped
@@ -72,20 +78,24 @@ struct MainViewModel {
         
         // MainViewController -> ListView
         Observable
+//            .combineLatest(
+//                sortedType,
+//                cellData
+//            ) { type, data -> [BlogListCellData] in
+//                switch type {
+//                case .title:
+//                    return data.sorted { $0.title ?? "" < $1.title ?? "" }
+//                case .datetime:
+//                    return data.sorted { $0.datetime ?? Date() > $1.datetime ?? Date() }
+//                default:
+//                    return data
+//                }
+//            }
+//            .bind(to: listView.cellData)
             .combineLatest(
                 sortedType,
-                cellData
-            ) { type, data -> [BlogListCellData] in
-                switch type {
-                case .title:
-                    return data.sorted { $0.title ?? "" < $1.title ?? "" }
-                case .datetime:
-                    return data.sorted { $0.datetime ?? Date() > $1.datetime ?? Date() }
-                default:
-                    return data
-                }
-            }
-//            .bind(to: listView.cellData)
+                cellData,
+                resultSelector: model.sort)
             .bind(to: blogListViewModel.blogCellData)
             .disposed(by: disposeBag)
         
